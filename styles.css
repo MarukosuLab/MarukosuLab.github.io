@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d1b2a; /* Azul muy oscuro */
+    color: #e0e0e0;
+    text-align: center;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Encabezado */
+header {
+    background: #1b263b; /* Azul oscuro */
+    color: white;
+    padding: 50px 20px;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: #415a77; /* Azul medio */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover {
+    background: #778da9; /* Azul claro */
+}
+
+/* Secciones */
+section {
+    padding: 50px 20px;
+    background: #1b263b; /* Azul oscuro */
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Portafolio */
+.proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.proyecto {
+    background: #2a3d5f; /* Azul grisáceo */
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.proyecto img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Contacto */
+.redes a {
+    display: inline-block;
+    margin: 10px;
+    color: #778da9;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+/* Pie de página */
+footer {
+    background: #1b263b;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
