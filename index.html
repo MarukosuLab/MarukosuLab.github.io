@@ -12,7 +12,7 @@
     <!-- Sección Principal -->
     <nav class="navbar">
         <div class="logo">
-            <a href="#">Marcos Sosa</a>
+            <a href="#">MarukosuLab</a>
         </div>
         <ul class="nav-links">
             <li><a href="#sobre-mi">About Me</a></li>
@@ -20,6 +20,7 @@
             <li><a href="#tecnologias">Technologies</a></li>
             <li><a href="#contacto">Contact</a></li>
         </ul>
+        <button id="modoBtn" class="btn">Modo Oscuro</button>
     </nav>
     
 
@@ -126,5 +127,27 @@
     <footer>
         <p>&copy; 2025 Marcos Daniel Sosa - All rights reserved.</p>
     </footer>
+    <script>
+    const modoBtn = document.getElementById("modoBtn");
+    const body = document.body;
+
+  // Cargar preferencia desde localStorage
+    if (localStorage.getItem("modo") === "oscuro") {
+    body.classList.add("dark-mode");
+    modoBtn.textContent = "Modo Claro";
+    }
+
+  // Alternar modo
+    modoBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    if (body.classList.contains("dark-mode")) {
+        modoBtn.textContent = "Modo Claro";
+        localStorage.setItem("modo", "oscuro");
+    } else {
+        modoBtn.textContent = "Modo Oscuro";
+        localStorage.setItem("modo", "claro");
+    }
+    });
+</script>
 </body>
 </html>
