@@ -27,7 +27,7 @@ header p {
 /* Botones */
 .btn {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 0px;
     padding: 10px 20px;
     background: #7a9e7e; /* Verde natural suave */
     color: white;
